@@ -1,0 +1,41 @@
+{
+  "MongoDB": {
+    "Enable": false,
+    "HOST": "39.99.40.249",
+    "USER": "explorer",
+    "PSWD": "pza",
+    "DB": "explorerDB",
+    "PORT": 27017
+  },
+  "MySql": {
+    "Enable": true,
+    "HOST": "39.97.181.0",
+    "USER": "dicsql",
+    "PSWD": "Aa0011034",
+    "DB": "dicsql",
+    "PORT": 3306
+  },
+  "Redis": {
+    "Enable": false,
+    "HOST": "39.99.40.249",
+    "USER": "explorer",
+    "PSWD": "pza",
+    "DB": "explorerDB",
+    "PORT": 27017
+  },
+  "WebServer": {
+    "Enable": true,
+    "UseStatic": true,
+    "StaticPath": "static",
+    "Host": "http://0.0.0.0:8567",
+    "PORT": 8567
+  },
+  "WebSocketServer": {
+    "Enable": false,
+    "PORT": 8083
+  },
+  "SocketServer": {
+    "Enable": false,
+    "PORT": 8083
+  }
+}
