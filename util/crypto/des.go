@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/marspere/goencrypt"
 )
-const PassWord  = "mANM454z"
+const PassWord  = "mZKM454z"
 func DesEncode(str string) (string, error) {
 	// key为12345678
 	// iv为空

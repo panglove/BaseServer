@@ -1,26 +1,26 @@
 {
   "MongoDB": {
     "Enable": false,
-    "HOST": "39.99.40.249",
-    "USER": "explorer",
-    "PSWD": "pza",
-    "DB": "explorerDB",
+    "HOST": "127.0.0.1",
+    "USER": "db",
+    "PSWD": "dbpass",
+    "DB": "dbDB",
     "PORT": 27017
   },
   "MySql": {
     "Enable": true,
-    "HOST": "39.97.181.0",
-    "USER": "dicsql",
-    "PSWD": "Aa0011034",
-    "DB": "dicsql",
+    "HOST": "127.0.0.1",
+    "USER": "db",
+    "PSWD": "dbpass",
+    "DB": "db",
     "PORT": 3306
   },
   "Redis": {
     "Enable": false,
-    "HOST": "39.99.40.249",
-    "USER": "explorer",
-    "PSWD": "pza",
-    "DB": "explorerDB",
+    "HOST": "127.0.0.1",
+    "USER": "db",
+    "PSWD": "dbpass",
+    "DB": "dbDB",
     "PORT": 27017
   },
   "WebServer": {

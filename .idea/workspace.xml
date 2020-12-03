@@ -3,7 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="82cb6905-b550-46fe-8d8e-d00a81797485" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BaseServer" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/minerserver/control.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/minerserver/hall.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/minerserver/protoco/protoco.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/minerserver/route.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/minerserver/sql/device.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/miner" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/crypto/des.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/crypto/des.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,17 +58,17 @@
     <property name="nodejs.protractor.protractor_package" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/app/hall" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/app/game/protoco/client" />
       <recent name="$PROJECT_DIR$/app/game/protoco/server_protoco" />
       <recent name="$PROJECT_DIR$/app/game/logic/name" />
       <recent name="$PROJECT_DIR$/database/redis" />
-      <recent name="$PROJECT_DIR$/database/mongodb" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/app/hall" />
     </key>
   </component>
   <component name="RunManager" selected="Go Build.go build main.go">

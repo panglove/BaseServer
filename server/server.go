@@ -1,26 +1,26 @@
-package main
+package server
 
 import (
-	"github.com/panglove/BaseServer/app"
+	"encoding/json"
 	"github.com/panglove/BaseServer/config"
 	"github.com/panglove/BaseServer/database"
 	"github.com/panglove/BaseServer/net"
 	"github.com/panglove/BaseServer/util/file"
 	"github.com/panglove/BaseServer/util/os"
-	"encoding/json"
 	"log"
 )
 
-const ConfigPath = "./config.json"
-
 var appConfig *config.Config
 
-func main() {
-	LoadConfig()
+type BaseApp interface {
+	Init()
+}
+func Init(ConfigPath string,app BaseApp) {
+	LoadConfig(ConfigPath)
 	app.Init()
 	os.WaitQuit()
 }
-func LoadConfig() {
+func LoadConfig(ConfigPath string) {
 	configStr, err := file.ReadFileString(ConfigPath)
 	if err != nil {
 		log.Fatal(err)
