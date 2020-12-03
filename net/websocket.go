@@ -58,7 +58,7 @@ func GoWebsocketReceiveMsg(wsCon *websocket.Conn) {
 		err := websocket.Message.Receive(wsCon, &msg)
 
 		if err == nil {
-			fmt.Println("connect msg :" + msg)
+		//	fmt.Println("connect msg :" + msg)
 
 			for _, receiver := range WebsocketReciverList {
 				receiver.OnMessage(wsCon, msg)

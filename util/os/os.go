@@ -14,8 +14,9 @@ func WaitQuit(){
 
 	select {
 
-	case s := <-c :
-		fmt.Println("Got signal:", s)
+	case  <-c :
+
+		fmt.Println("Force exit BaseServer")
 
 	}
 }

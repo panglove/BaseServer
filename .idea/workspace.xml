@@ -3,17 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="82cb6905-b550-46fe-8d8e-d00a81797485" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BaseServer" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/minerserver/control.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/minerserver/hall.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/minerserver/protoco/protoco.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/minerserver/route.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/minerserver/sql/device.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/miner" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/crypto/des.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/crypto/des.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/net/websocket.go" beforeDir="false" afterPath="$PROJECT_DIR$/net/websocket.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/os/os.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/os/os.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Go File" />
       </list>
     </option>
@@ -48,6 +41,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -59,11 +53,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$/server" />
       <recent name="$PROJECT_DIR$/app/game/protoco/client" />
       <recent name="$PROJECT_DIR$/app/game/protoco/server_protoco" />
       <recent name="$PROJECT_DIR$/app/game/logic/name" />
-      <recent name="$PROJECT_DIR$/database/redis" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -71,13 +65,20 @@
       <recent name="$PROJECT_DIR$/app/hall" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go">
+  <component name="RunManager" selected="Go Test.websocket_test.go">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="ErBaServer" />
       <working_directory value="$PROJECT_DIR$/" />
       <go_parameters value="-i" />
       <kind value="FILE" />
       <filePath value="./main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BaseServer" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -87,43 +88,26 @@
       <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="TestWeb in ErBaServer/net" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="ErBaServer" />
-      <working_directory value="$PROJECT_DIR$/net" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="ErBaServer/net" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestWeb$" />
+    <configuration name="go build test_app.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BaseServer" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/test_app.go" />
       <method v="2" />
     </configuration>
-    <configuration name="struct_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="ErBaServer" />
-      <working_directory value="$PROJECT_DIR$/app/game/util" />
-      <framework value="gotest" />
+    <configuration name="go build test_server.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="BaseServer" />
+      <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
-      <package value="ErBaServer" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/app/game/util/struct_test.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="web_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="ErBaServer" />
-      <working_directory value="$PROJECT_DIR$/net" />
-      <framework value="gotest" />
-      <kind value="FILE" />
-      <package value="ErBaServer" />
-      <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/net/web_test.go" />
+      <filePath value="$PROJECT_DIR$/test_server.go" />
       <method v="2" />
     </configuration>
     <configuration name="websocket_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="ErBaServer" />
+      <module name="BaseServer" />
       <working_directory value="$PROJECT_DIR$/net" />
       <framework value="gotest" />
       <kind value="FILE" />
-      <package value="ErBaServer" />
+      <package value="github.com/panglove/BaseServer" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/net/websocket_test.go" />
       <method v="2" />
@@ -139,18 +123,18 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.go build main.go" />
-      <item itemvalue="Go Test.TestWeb in ErBaServer/net" />
-      <item itemvalue="Go Test.struct_test.go" />
-      <item itemvalue="Go Test.web_test.go" />
+      <item itemvalue="Go Build.go build test_server.go" />
       <item itemvalue="Go Test.websocket_test.go" />
+      <item itemvalue="Go Build.go build test_app.go" />
+      <item itemvalue="Go Build.go build main.go (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
-        <item itemvalue="Go Test.TestWeb in ErBaServer/net" />
-        <item itemvalue="Go Test.web_test.go" />
-        <item itemvalue="Go Test.struct_test.go" />
         <item itemvalue="Go Test.websocket_test.go" />
+        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build test_app.go" />
+        <item itemvalue="Go Build.go build test_server.go" />
+        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -162,18 +146,10 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="560" y="181" key="#Go_Modules_(vgo)" timestamp="1597975014188">
-      <screen x="0" y="23" width="1920" height="982" />
-    </state>
-    <state x="560" y="181" key="#Go_Modules_(vgo)/0.23.1920.982@0.23.1920.982" timestamp="1597975014188" />
     <state x="675" y="153" key="#TestWeb_in_ErBaServer/net" timestamp="1600411575876">
       <screen x="0" y="23" width="1920" height="982" />
     </state>
     <state x="675" y="153" key="#TestWeb_in_ErBaServer/net/0.23.1920.982@0.23.1920.982" timestamp="1600411575876" />
-    <state x="424" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597999024766">
-      <screen x="0" y="23" width="1920" height="982" />
-    </state>
-    <state x="424" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.982@0.23.1920.982" timestamp="1597999024766" />
     <state x="719" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600414613635">
       <screen x="0" y="23" width="1920" height="982" />
     </state>
@@ -182,58 +158,30 @@
       <screen x="0" y="23" width="1920" height="982" />
     </state>
     <state x="558" y="114" key="CommitChangelistDialog2/0.23.1920.982@0.23.1920.982" timestamp="1598929058676" />
-    <state width="1878" height="158" key="GridCell.Tab.0.bottom" timestamp="1606198549604">
+    <state width="1878" height="158" key="GridCell.Tab.0.bottom" timestamp="1606989485948">
       <screen x="0" y="23" width="1920" height="983" />
     </state>
-    <state width="1878" height="327" key="GridCell.Tab.0.bottom/0.23.1440.802@0.23.1440.802" timestamp="1598177039555" />
     <state width="1878" height="158" key="GridCell.Tab.0.bottom/0.23.1920.1102@0.23.1920.1102" timestamp="1600456326692" />
     <state width="1878" height="158" key="GridCell.Tab.0.bottom/0.23.1920.982@0.23.1920.982" timestamp="1600414902958" />
-    <state width="1878" height="158" key="GridCell.Tab.0.bottom/0.23.1920.983@0.23.1920.983" timestamp="1606198549604" />
-    <state width="1878" height="158" key="GridCell.Tab.0.center" timestamp="1606198549604">
+    <state width="1878" height="158" key="GridCell.Tab.0.bottom/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
+    <state width="1878" height="158" key="GridCell.Tab.0.center" timestamp="1606989485948">
       <screen x="0" y="23" width="1920" height="983" />
     </state>
-    <state width="1878" height="327" key="GridCell.Tab.0.center/0.23.1440.802@0.23.1440.802" timestamp="1598177039555" />
     <state width="1878" height="158" key="GridCell.Tab.0.center/0.23.1920.1102@0.23.1920.1102" timestamp="1600456326691" />
     <state width="1878" height="158" key="GridCell.Tab.0.center/0.23.1920.982@0.23.1920.982" timestamp="1600414902958" />
-    <state width="1878" height="158" key="GridCell.Tab.0.center/0.23.1920.983@0.23.1920.983" timestamp="1606198549604" />
-    <state width="1878" height="158" key="GridCell.Tab.0.left" timestamp="1606198549603">
+    <state width="1878" height="158" key="GridCell.Tab.0.center/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
+    <state width="1878" height="158" key="GridCell.Tab.0.left" timestamp="1606989485948">
       <screen x="0" y="23" width="1920" height="983" />
     </state>
-    <state width="1878" height="327" key="GridCell.Tab.0.left/0.23.1440.802@0.23.1440.802" timestamp="1598177039554" />
     <state width="1878" height="158" key="GridCell.Tab.0.left/0.23.1920.1102@0.23.1920.1102" timestamp="1600456326689" />
     <state width="1878" height="158" key="GridCell.Tab.0.left/0.23.1920.982@0.23.1920.982" timestamp="1600414902957" />
-    <state width="1878" height="158" key="GridCell.Tab.0.left/0.23.1920.983@0.23.1920.983" timestamp="1606198549603" />
-    <state width="1878" height="158" key="GridCell.Tab.0.right" timestamp="1606198549604">
+    <state width="1878" height="158" key="GridCell.Tab.0.left/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
+    <state width="1878" height="158" key="GridCell.Tab.0.right" timestamp="1606989485948">
       <screen x="0" y="23" width="1920" height="983" />
     </state>
-    <state width="1878" height="327" key="GridCell.Tab.0.right/0.23.1440.802@0.23.1440.802" timestamp="1598177039555" />
     <state width="1878" height="158" key="GridCell.Tab.0.right/0.23.1920.1102@0.23.1920.1102" timestamp="1600456326691" />
     <state width="1878" height="158" key="GridCell.Tab.0.right/0.23.1920.982@0.23.1920.982" timestamp="1600414902958" />
-    <state width="1878" height="158" key="GridCell.Tab.0.right/0.23.1920.983@0.23.1920.983" timestamp="1606198549604" />
-    <state width="1878" height="327" key="GridCell.Tab.1.bottom" timestamp="1598177039558">
-      <screen x="0" y="23" width="1440" height="802" />
-    </state>
-    <state width="1878" height="327" key="GridCell.Tab.1.bottom/0.23.1440.802@0.23.1440.802" timestamp="1598177039558" />
-    <state width="1878" height="327" key="GridCell.Tab.1.bottom/0.23.1920.982@0.23.1920.982" timestamp="1597999767505" />
-    <state width="1878" height="327" key="GridCell.Tab.1.center" timestamp="1598177039556">
-      <screen x="0" y="23" width="1440" height="802" />
-    </state>
-    <state width="1878" height="327" key="GridCell.Tab.1.center/0.23.1440.802@0.23.1440.802" timestamp="1598177039556" />
-    <state width="1878" height="327" key="GridCell.Tab.1.center/0.23.1920.982@0.23.1920.982" timestamp="1597999767504" />
-    <state width="1878" height="327" key="GridCell.Tab.1.left" timestamp="1598177039556">
-      <screen x="0" y="23" width="1440" height="802" />
-    </state>
-    <state width="1878" height="327" key="GridCell.Tab.1.left/0.23.1440.802@0.23.1440.802" timestamp="1598177039556" />
-    <state width="1878" height="327" key="GridCell.Tab.1.left/0.23.1920.982@0.23.1920.982" timestamp="1597999767504" />
-    <state width="1878" height="327" key="GridCell.Tab.1.right" timestamp="1598177039558">
-      <screen x="0" y="23" width="1440" height="802" />
-    </state>
-    <state width="1878" height="327" key="GridCell.Tab.1.right/0.23.1440.802@0.23.1440.802" timestamp="1598177039558" />
-    <state width="1878" height="327" key="GridCell.Tab.1.right/0.23.1920.982@0.23.1920.982" timestamp="1597999767504" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1598004065070">
-      <screen x="0" y="23" width="1920" height="982" />
-    </state>
-    <state width="500" height="445" key="SwitcherDM/0.23.1920.982@0.23.1920.982" timestamp="1598004065070" />
+    <state width="1878" height="158" key="GridCell.Tab.0.right/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
     <state x="637" y="278" width="790" height="539" key="find.popup" timestamp="1606207002308">
       <screen x="0" y="23" width="1920" height="983" />
     </state>
