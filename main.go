@@ -1,7 +1,9 @@
 package main
 
-import "github.com/panglove/BaseServer/test"
+import "fmt"
 
 func main()  {
-	test.Start()
+
+	fmt.Println("hello base sever")
+	//test.Start()
 }
