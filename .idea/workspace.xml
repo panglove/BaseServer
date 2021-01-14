@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="82cb6905-b550-46fe-8d8e-d00a81797485" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/mongodb/mongodb.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/mongodb/mongodb.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/mysql.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/redis/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/redis/redis.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +64,7 @@
       <recent name="$PROJECT_DIR$/app/hall" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.websocket_test.go">
+  <component name="RunManager" selected="Go Test.TestNew in github.com/panglove/BaseServer/database/mysql">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="ErBaServer" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -78,13 +75,6 @@
     </configuration>
     <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="BaseServer" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="ErBaServer" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/main.go" />
@@ -102,6 +92,17 @@
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/test_server.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestNew in github.com/panglove/BaseServer/database/mysql" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="BaseServer" />
+      <working_directory value="$PROJECT_DIR$/database/mysql" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/panglove/BaseServer/database/mysql" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestNew$" />
       <method v="2" />
     </configuration>
     <configuration name="websocket_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -124,19 +125,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build test_server.go" />
       <item itemvalue="Go Build.go build test_app.go" />
       <item itemvalue="Go Build.go build main.go (1)" />
       <item itemvalue="Go Test.websocket_test.go" />
+      <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/mysql" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/mysql" />
         <item itemvalue="Go Test.websocket_test.go" />
         <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build test_app.go" />
         <item itemvalue="Go Build.go build test_server.go" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -148,46 +149,33 @@
     <proxy>direct</proxy>
   </component>
   <component name="WindowStateProjectService">
-    <state x="675" y="153" key="#TestWeb_in_ErBaServer/net" timestamp="1600411575876">
-      <screen x="0" y="23" width="1920" height="982" />
+    <state x="338" y="56" key="CommitChangelistDialog2" timestamp="1610613749544">
+      <screen x="0" y="23" width="1536" height="866" />
     </state>
-    <state x="675" y="153" key="#TestWeb_in_ErBaServer/net/0.23.1920.982@0.23.1920.982" timestamp="1600411575876" />
-    <state x="719" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600414613635">
-      <screen x="0" y="23" width="1920" height="982" />
+    <state x="338" y="56" key="CommitChangelistDialog2/0.23.1536.866@0.23.1536.866" timestamp="1610613749544" />
+    <state width="1494" height="237" key="GridCell.Tab.0.bottom" timestamp="1610617983891">
+      <screen x="0" y="23" width="1536" height="866" />
     </state>
-    <state x="719" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.982@0.23.1920.982" timestamp="1600414613635" />
-    <state x="558" y="114" key="CommitChangelistDialog2" timestamp="1598929058676">
-      <screen x="0" y="23" width="1920" height="982" />
-    </state>
-    <state x="558" y="114" key="CommitChangelistDialog2/0.23.1920.982@0.23.1920.982" timestamp="1598929058676" />
-    <state width="1878" height="158" key="GridCell.Tab.0.bottom" timestamp="1606989485948">
-      <screen x="0" y="23" width="1920" height="983" />
-    </state>
-    <state width="1878" height="158" key="GridCell.Tab.0.bottom/0.23.1920.1102@0.23.1920.1102" timestamp="1600456326692" />
-    <state width="1878" height="158" key="GridCell.Tab.0.bottom/0.23.1920.982@0.23.1920.982" timestamp="1600414902958" />
+    <state width="1494" height="237" key="GridCell.Tab.0.bottom/0.23.1536.866@0.23.1536.866" timestamp="1610617983891" />
     <state width="1878" height="158" key="GridCell.Tab.0.bottom/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
-    <state width="1878" height="158" key="GridCell.Tab.0.center" timestamp="1606989485948">
-      <screen x="0" y="23" width="1920" height="983" />
+    <state width="1494" height="237" key="GridCell.Tab.0.center" timestamp="1610617983890">
+      <screen x="0" y="23" width="1536" height="866" />
     </state>
-    <state width="1878" height="158" key="GridCell.Tab.0.center/0.23.1920.1102@0.23.1920.1102" timestamp="1600456326691" />
-    <state width="1878" height="158" key="GridCell.Tab.0.center/0.23.1920.982@0.23.1920.982" timestamp="1600414902958" />
+    <state width="1494" height="237" key="GridCell.Tab.0.center/0.23.1536.866@0.23.1536.866" timestamp="1610617983890" />
     <state width="1878" height="158" key="GridCell.Tab.0.center/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
-    <state width="1878" height="158" key="GridCell.Tab.0.left" timestamp="1606989485948">
-      <screen x="0" y="23" width="1920" height="983" />
+    <state width="1494" height="237" key="GridCell.Tab.0.left" timestamp="1610617983889">
+      <screen x="0" y="23" width="1536" height="866" />
     </state>
-    <state width="1878" height="158" key="GridCell.Tab.0.left/0.23.1920.1102@0.23.1920.1102" timestamp="1600456326689" />
-    <state width="1878" height="158" key="GridCell.Tab.0.left/0.23.1920.982@0.23.1920.982" timestamp="1600414902957" />
+    <state width="1494" height="237" key="GridCell.Tab.0.left/0.23.1536.866@0.23.1536.866" timestamp="1610617983889" />
     <state width="1878" height="158" key="GridCell.Tab.0.left/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
-    <state width="1878" height="158" key="GridCell.Tab.0.right" timestamp="1606989485948">
-      <screen x="0" y="23" width="1920" height="983" />
+    <state width="1494" height="237" key="GridCell.Tab.0.right" timestamp="1610617983890">
+      <screen x="0" y="23" width="1536" height="866" />
     </state>
-    <state width="1878" height="158" key="GridCell.Tab.0.right/0.23.1920.1102@0.23.1920.1102" timestamp="1600456326691" />
-    <state width="1878" height="158" key="GridCell.Tab.0.right/0.23.1920.982@0.23.1920.982" timestamp="1600414902958" />
+    <state width="1494" height="237" key="GridCell.Tab.0.right/0.23.1536.866@0.23.1536.866" timestamp="1610617983890" />
     <state width="1878" height="158" key="GridCell.Tab.0.right/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
     <state x="637" y="278" width="790" height="539" key="find.popup" timestamp="1606207002308">
       <screen x="0" y="23" width="1920" height="983" />
     </state>
-    <state x="637" y="278" width="790" height="538" key="find.popup/0.23.1920.982@0.23.1920.982" timestamp="1600411008388" />
     <state x="637" y="278" width="790" height="539" key="find.popup/0.23.1920.983@0.23.1920.983" timestamp="1606207002308" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
