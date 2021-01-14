@@ -5,11 +5,15 @@ import (
 	"fmt"
 )
 
-func Init(db *config.MongoDB){
+type MongoDB struct {
+
+}
+func New(db *config.MongoDB)*MongoDB{
 
 	if !db.Enable {
-		return
+		return nil
 	}
 	fmt.Println("Mongodb Enable Port :",db.PORT)
+	return new(MongoDB)
 
 }

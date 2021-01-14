@@ -1,20 +1,20 @@
 package mysql
 
 import (
-	"github.com/panglove/BaseServer/config"
 	"database/sql"
 	"fmt"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/panglove/BaseServer/config"
 	"log"
 )
-
-var MysqlDB *sql.DB
-
-func Init(db *config.MySql) {
+type MysqlDB struct {
+	*sql.DB
+}
+func New(db *config.MySql) *MysqlInstall{
 	fmt.Println("open mysql")
 
 	if !db.Enable {
-		return
+		return nil
 	}
 	dbDSN := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=%s", db.USER, db.PSWD, db.HOST, db.PORT, db.DB, "utf8")
 	MysqlDBInstall, err := sql.Open("mysql", dbDSN)
@@ -22,14 +22,16 @@ func Init(db *config.MySql) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	MysqlDB = MysqlDBInstall
+	mdb := new(MysqlDB)
+	mdb.DB=MysqlDBInstall
 	fmt.Println("mysql connect " + dbDSN)
+	return mdb
 
 }
 
-func Select(sqlStr string, k ...interface{}) ([]map[string]interface{}, bool) {
+func(mdb *MysqlDB) Select(sqlStr string, k ...interface{}) ([]map[string]interface{}, bool) {
 
-	rows, err := MysqlDB.Query(sqlStr, k...)
+	rows, err := mdb.Query(sqlStr, k...)
 
 	if err != nil {
 		fmt.Println("get query rows err:", err)

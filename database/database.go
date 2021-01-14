@@ -7,8 +7,16 @@ import (
 	"github.com/panglove/BaseServer/database/redis"
 )
 
-func Init(config *config.Config){
-	redis.Init(&config.Redis)
-	mongodb.Init(&config.MongoDB)
-	mysql.Init(&config.MySql)
+type DataBase struct {
+	MysqlDB *mysql.MysqlDB
+	MongoDB *mongodb.MongoDB
+	RedisDB *redis.RedisDB
+}
+
+func New(config *config.Config) *DataBase {
+	newDateBase := new(DataBase)
+	newDateBase.MysqlDB = mysql.New(&config.MySql)
+	newDateBase.RedisDB = redis.New(&config.Redis)
+	newDateBase.MongoDB = mongodb.New(&config.MongoDB)
+	return newDateBase
 }

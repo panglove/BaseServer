@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="82cb6905-b550-46fe-8d8e-d00a81797485" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mongodb/mongodb.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/mongodb/mongodb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/redis/redis.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/redis/redis.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +24,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.14.4/libexec" />
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.15.6/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -44,6 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -122,9 +126,9 @@
     <list>
       <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Build.go build test_server.go" />
-      <item itemvalue="Go Test.websocket_test.go" />
       <item itemvalue="Go Build.go build test_app.go" />
       <item itemvalue="Go Build.go build main.go (1)" />
+      <item itemvalue="Go Test.websocket_test.go" />
     </list>
     <recent_temporary>
       <list>
