@@ -39,7 +39,7 @@ func (mdb *MysqlDB) DTable(tableName string) *MysqlDB {
 	mdb.Table = tableName
 	return mdb
 }
-func (mdb *MysqlDB) DSelect(what []string) *MysqlDB {
+func (mdb *MysqlDB) DSelect(what ...string) *MysqlDB {
 	sql := ""
 	for i, v := range what {
 		if i != len(what)-1 {
@@ -65,7 +65,7 @@ func (mdb *MysqlDB) DDelete() *MysqlDB {
 
 //like []string{"id=1","name=where"}
 
-func (mdb *MysqlDB) DUpdate(what []string) *MysqlDB {
+func (mdb *MysqlDB) DUpdate(what ...string) *MysqlDB {
 	sql := ""
 	for i, v := range what {
 		if i != len(what)-1 {
@@ -83,7 +83,7 @@ func (mdb *MysqlDB) DUpdate(what []string) *MysqlDB {
 
 //like []string{"id","name"},[]interface{1,"12"}
 
-func (mdb *MysqlDB) DInsert(what []string, data []string) *MysqlDB {
+func (mdb *MysqlDB) DInsert(what []string, data ...string) *MysqlDB {
 	sql := "("
 	for i, v := range what {
 		if i != len(what)-1 {
@@ -111,7 +111,7 @@ func (mdb *MysqlDB) DInsert(what []string, data []string) *MysqlDB {
 }
 
 //like []string{"id=1","name=where"}
-func (mdb *MysqlDB) DWhereAnd(what []string) *MysqlDB {
+func (mdb *MysqlDB) DWhereAnd(what ...string) *MysqlDB {
 	sql := ""
 	for i, v := range what {
 		if i != len(what)-1 {
@@ -127,7 +127,7 @@ func (mdb *MysqlDB) DWhereAnd(what []string) *MysqlDB {
 }
 
 //like []string{"id=1","name=where"}
-func (mdb *MysqlDB) DWhereOr(what []string) *MysqlDB {
+func (mdb *MysqlDB) DWhereOr(what ...string) *MysqlDB {
 	sql := ""
 	for i, v := range what {
 		if i != len(what)-1 {
@@ -142,7 +142,7 @@ func (mdb *MysqlDB) DWhereOr(what []string) *MysqlDB {
 	return mdb
 }
 
-func (mdb *MysqlDB) DOrderBy(what []string) *MysqlDB {
+func (mdb *MysqlDB) DOrderBy(what ...string) *MysqlDB {
 	sql := ""
 	for i, v := range what {
 		if i != len(what)-1 {
@@ -156,7 +156,7 @@ func (mdb *MysqlDB) DOrderBy(what []string) *MysqlDB {
 	mdb.NowSql = whereSql
 	return mdb
 }
-func (mdb *MysqlDB) DLimit(what []string) *MysqlDB {
+func (mdb *MysqlDB) DLimit(what ...string) *MysqlDB {
 	sql := ""
 	for i, v := range what {
 		if i != len(what)-1 {
