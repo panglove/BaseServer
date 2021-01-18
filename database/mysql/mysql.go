@@ -170,6 +170,15 @@ func (mdb *MysqlDB) DLimit(what ...string) *MysqlDB {
 	mdb.NowSql = whereSql
 	return mdb
 }
+func (mdb *MysqlDB) DStrEqual(i string,k string) string {
+
+	return  i+"='"+k+"'"
+}
+func (mdb *MysqlDB) DIntEqual(i string,k string) string {
+
+	return  i+"="+k+""
+}
+
 func (mdb *MysqlDB) DExec() ([]map[string]interface{}, bool) {
 
 	if len(mdb.NowSql) > 0 {
