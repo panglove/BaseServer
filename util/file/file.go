@@ -13,7 +13,38 @@ const (
 
 	NONE = 0
 )
+func ReadFileBytes(path string) ([]byte, error) {
 
+	f, err := os.Open(path)
+	defer f.Close()
+	if err != nil {
+		return nil, err
+	}
+
+	buffer := bufio.NewReader(f)
+	fileBuff :=make([]byte,1024*1024)
+
+
+	n, err := buffer.Read(fileBuff)
+	if n>0 {
+
+		fileBuff = fileBuff[0:n]
+
+		if err != nil {
+			if err == io.EOF {
+
+				return  fileBuff,nil
+			} else {
+
+				return nil, err
+			}
+		}
+
+	}
+
+	return nil, nil
+
+}
 func ReadFileString(path string) (string, error) {
 
 	res := ""
@@ -59,6 +90,24 @@ func WriteFileString(path string, content string) error {
 	}
 
 	_, err2 := f.WriteString(content)
+
+
+	return err2
+
+}
+func WriteFileBytes(path string, content []byte) error {
+
+	CreateFile(path,true)
+
+	f, err := os.OpenFile(path,os.O_RDWR,os.ModePerm)
+
+	defer f.Close()
+
+	if err != nil {
+		return err
+	}
+
+	_, err2 := f.Write(content)
 
 
 	return err2
