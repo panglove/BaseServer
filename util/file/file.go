@@ -21,28 +21,27 @@ func ReadFileBytes(path string) ([]byte, error) {
 		return nil, err
 	}
 
-	buffer := bufio.NewReader(f)
-	fileBuff :=make([]byte,1024*1024)
+	buf := make([]byte, 1024)
 
+	// 该字节切片用于存放文件所有字节
+	var bytes []byte
 
-	n, err := buffer.Read(fileBuff)
-	if n>0 {
+	for {
+		// 返回本次读取的字节数
+		count, err := f.Read(buf)
 
-		fileBuff = fileBuff[0:n]
-
-		if err != nil {
-			if err == io.EOF {
-
-				return  fileBuff,nil
-			} else {
-
-				return nil, err
-			}
+		// 检测是否到了文件末尾
+		if err == io.EOF {
+			break;
 		}
 
-	}
+		// 取出本次读取的数据
+		currBytes := buf[:count]
 
-	return nil, nil
+		// 将读取到的数据 追加到字节切片中
+		bytes = append(bytes, currBytes...)
+	}
+	return bytes,nil
 
 }
 func ReadFileString(path string) (string, error) {
