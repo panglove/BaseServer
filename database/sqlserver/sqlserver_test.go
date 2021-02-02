@@ -11,8 +11,8 @@ func TestNew(t *testing.T) {
 	mydb := New(&config.MsSql{
 		Enable: true,
 		HOST:   "47.57.15.159",
-		USER:   "sasadsad",
-		PSWD:   "J",
+		USER:   "sa",
+		PSWD:   "JSs7GihgoKM8rZQm",
 		DB:     "RCH",
 		PORT:   1433})
 	maps, isok := mydb.DTable("Machine").DSelect("*").DWhereAnd("Address is not null ", " Address <> ''").DExec()

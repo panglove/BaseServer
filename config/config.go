@@ -56,6 +56,7 @@ type SocketServer struct {
 type Config struct {
 	MongoDB         MongoDB
 	MySql           MySql
+	MsSql           MsSql
 	Redis           Redis
 	WebServer       WebServer
 	WebSocketServer WebSocketServer
