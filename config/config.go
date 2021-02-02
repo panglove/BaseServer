@@ -18,6 +18,14 @@ type MySql struct {
 	DB     string
 	PORT   int
 }
+type MsSql struct {
+	Enable bool
+	HOST   string
+	USER   string
+	PSWD   string
+	DB     string
+	PORT   int
+}
 
 type Redis struct {
 	Enable bool
