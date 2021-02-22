@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="82cb6905-b550-46fe-8d8e-d00a81797485" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/mysql.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mysql/mysql_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/mysql_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/struct2/struct2.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/struct2/struct2.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +80,7 @@
       <recent name="$PROJECT_DIR$/app/hall" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestNew in github.com/panglove/BaseServer/database/sqlserver">
+  <component name="RunManager" selected="Go Test.TestNew in github.com/panglove/BaseServer/database/mysql">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="ErBaServer" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -151,8 +153,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/sqlserver" />
         <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/mysql" />
+        <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/sqlserver" />
         <item itemvalue="Go Test.websocket_test.go" />
         <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build test_app.go" />
@@ -175,25 +177,29 @@
       <screen x="0" y="23" width="1536" height="866" />
     </state>
     <state x="338" y="56" key="CommitChangelistDialog2/0.23.1536.866@0.23.1536.866" timestamp="1610613749544" />
-    <state width="1494" height="185" key="GridCell.Tab.0.bottom" timestamp="1612267040106">
-      <screen x="0" y="23" width="1536" height="866" />
+    <state width="1494" height="246" key="GridCell.Tab.0.bottom" timestamp="1613982493327">
+      <screen x="0" y="23" width="1536" height="869" />
     </state>
     <state width="1494" height="185" key="GridCell.Tab.0.bottom/0.23.1536.866@0.23.1536.866" timestamp="1612267040106" />
+    <state width="1494" height="246" key="GridCell.Tab.0.bottom/0.23.1536.869@0.23.1536.869" timestamp="1613982493327" />
     <state width="1878" height="158" key="GridCell.Tab.0.bottom/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
-    <state width="1494" height="185" key="GridCell.Tab.0.center" timestamp="1612267040106">
-      <screen x="0" y="23" width="1536" height="866" />
+    <state width="1494" height="246" key="GridCell.Tab.0.center" timestamp="1613982493326">
+      <screen x="0" y="23" width="1536" height="869" />
     </state>
     <state width="1494" height="185" key="GridCell.Tab.0.center/0.23.1536.866@0.23.1536.866" timestamp="1612267040106" />
+    <state width="1494" height="246" key="GridCell.Tab.0.center/0.23.1536.869@0.23.1536.869" timestamp="1613982493326" />
     <state width="1878" height="158" key="GridCell.Tab.0.center/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
-    <state width="1494" height="185" key="GridCell.Tab.0.left" timestamp="1612267040106">
-      <screen x="0" y="23" width="1536" height="866" />
+    <state width="1494" height="246" key="GridCell.Tab.0.left" timestamp="1613982493326">
+      <screen x="0" y="23" width="1536" height="869" />
     </state>
     <state width="1494" height="185" key="GridCell.Tab.0.left/0.23.1536.866@0.23.1536.866" timestamp="1612267040106" />
+    <state width="1494" height="246" key="GridCell.Tab.0.left/0.23.1536.869@0.23.1536.869" timestamp="1613982493326" />
     <state width="1878" height="158" key="GridCell.Tab.0.left/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
-    <state width="1494" height="185" key="GridCell.Tab.0.right" timestamp="1612267040106">
-      <screen x="0" y="23" width="1536" height="866" />
+    <state width="1494" height="246" key="GridCell.Tab.0.right" timestamp="1613982493327">
+      <screen x="0" y="23" width="1536" height="869" />
     </state>
     <state width="1494" height="185" key="GridCell.Tab.0.right/0.23.1536.866@0.23.1536.866" timestamp="1612267040106" />
+    <state width="1494" height="246" key="GridCell.Tab.0.right/0.23.1536.869@0.23.1536.869" timestamp="1613982493327" />
     <state width="1878" height="158" key="GridCell.Tab.0.right/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
     <state width="1494" height="149" key="GridCell.Tab.1.bottom" timestamp="1610676398639">
       <screen x="0" y="23" width="1536" height="866" />

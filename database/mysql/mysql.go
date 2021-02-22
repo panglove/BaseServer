@@ -186,6 +186,7 @@ func (mdb *MysqlDB) DExec() ([]map[string]interface{}, bool) {
 			return mdb.Select(mdb.NowSql)
 		} else {
 			_, err := mdb.Exec(mdb.NowSql)
+			log.Println(err)
 			return nil, err == nil
 		}
 	}

@@ -2,10 +2,21 @@ package mysql
 
 import (
 	"github.com/panglove/BaseServer/config"
+	"github.com/panglove/BaseServer/util/struct2"
 	"log"
 	"testing"
 )
-
+type Payment struct {
+	Id int `json:"id"`
+	Name string `json:"name"`
+	Count float64 `json:"count"`
+	Time string `json:"time"`
+	Share int `json:"share"`
+	TotalShare int `json:"totalShare"`
+	TotalEth int `json:"totalEth"`
+	EthPrice int `json:"ethPrice"`
+	IsPay int `json:"isPay"`
+}
 func TestNew(t *testing.T) {
 	testString("1")
 	mydb :=New(&config.MySql{
@@ -15,14 +26,11 @@ func TestNew(t *testing.T) {
 		PSWD: "Aa0011034",
 		DB: "miner",
 		PORT: 3306})
-	log.Println(mydb.DTable("admin").DSelect("account","password").DWhereAnd("login_time>0").DExec())
-
-	log.Println(mydb.DTable("admin").DDelete().DWhereAnd("login_time=0").NowSql)
-
-	log.Println(mydb.DTable("admin").DUpdate("login_time=0").DWhereAnd("login_time=0").NowSql)
-
-	log.Println(mydb.DTable("admin").DInsert([]string{"login_time","login_ip"},"1","'192.168.0.1'").DWhereAnd("login_time=0").DLimit("0","1").NowSql)
-	log.Println(mydb.DTable("admin").DSelect("account","password").DWhereAnd("login_time>0").DOrderBy("id desc").DLimit("0","1").NowSql)
+	newMap :=new(Payment)
+	newMap.Name="hhhhh"
+	log.Println(mydb.DTable("payment").DInsert(struct2.GetStructKeyList(newMap),struct2.GetStructSqlValueList(newMap)...).NowSql)
+	_,R :=mydb.DTable("payment").DInsert(struct2.GetStructKeyList(newMap),struct2.GetStructSqlValueList(newMap)...).DExec()
+	log.Println(R)
 
 }
 
