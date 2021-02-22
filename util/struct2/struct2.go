@@ -6,6 +6,33 @@ import (
 	"strconv"
 )
 
+func GetStructKeyList(stru interface{})  []string {
+	newMap := StructToEndMap(stru)
+
+	var list []string
+
+	for k:=range newMap {
+
+		list = append(list,k)
+	}
+	return list
+
+}
+
+
+func GetStructValueList(stru interface{})  []string {
+	newMap := StructToEndMap(stru)
+
+	var list []string
+
+	for k:=range newMap {
+
+		list = append(list,InterfaceStrval(newMap[k]))
+	}
+	return list
+
+}
+
 func StructToEndMap(stru interface{}) map[string]interface{} {
 	m := make(map[string]interface{})
 	j, _ := json.Marshal(stru)
