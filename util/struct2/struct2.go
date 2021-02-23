@@ -2,9 +2,10 @@ package struct2
 
 import (
 	"encoding/json"
+	"log"
 	"reflect"
-	"github.com/goinggo/mapstructure"
 	"strconv"
+	"strings"
 )
 
 func GetStructKeyList(stru interface{})  []string {
@@ -45,10 +46,59 @@ func GetStructValueList(stru interface{})  []string {
 	return list
 
 }
-func MapToToEndStruct(mapS interface{},stru interface{}) bool{
-	err :=mapstructure.Decode(mapS,&stru)
-	return err==nil
+func GetMapToStructBuff(mapS map[string]interface{},stru interface{}) []byte{
+
+	mapRf := reflect.TypeOf(stru)
+	newMaps :=make(map[string]interface{})
+
+	for k,_:=range mapS {
+		log.Println(k)
+		f ,isHas :=mapRf.FieldByName(k)
+
+		log.Println(isHas)
+
+		if !isHas {
+			bigM :=strings.ToUpper(k[:1])+k[1:]
+			f ,isHasTag :=mapRf.FieldByName(bigM)
+
+			if isHasTag {
+				switch f.Type.Kind() {
+				case reflect.Float64:
+					newMaps[k] ,_= strconv.ParseFloat(mapS[k].(string),64)
+					break;
+				case reflect.Int64:
+					newMaps[k] ,_= strconv.Atoi(mapS[k].(string))
+					break;
+				case reflect.Int:
+					newMaps[k] ,_= strconv.Atoi(mapS[k].(string))
+					break;
+				default:
+					newMaps[k] =mapS[k]
+				}
+			}
+		}else {
+			switch f.Type.Kind() {
+			case reflect.Float64:
+				newMaps[k] ,_= strconv.ParseFloat(mapS[k].(string),64)
+				break;
+			case reflect.Int64:
+				newMaps[k] ,_= strconv.Atoi(mapS[k].(string))
+				break;
+			case reflect.Int:
+				newMaps[k] ,_= strconv.Atoi(mapS[k].(string))
+				break;
+			default:
+				newMaps[k] =mapS[k]
+			}
+
+		}
+	}
+	buff ,_:=json.Marshal(newMaps)
+	return buff
 }
+
+
+
 func StructToEndMap(stru interface{}) map[string]interface{} {
 	m := make(map[string]interface{})
 	j, _ := json.Marshal(stru)
