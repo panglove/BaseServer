@@ -55,8 +55,6 @@ func GetMapToStructBuff(mapS map[string]interface{},stru interface{}) []byte{
 		log.Println(k)
 		f ,isHas :=mapRf.FieldByName(k)
 
-		log.Println(isHas)
-
 		if !isHas {
 			bigM :=strings.ToUpper(k[:1])+k[1:]
 			f ,isHasTag :=mapRf.FieldByName(bigM)
