@@ -2,7 +2,6 @@ package struct2
 
 import (
 	"encoding/json"
-	"log"
 	"reflect"
 	"strconv"
 	"strings"
@@ -86,7 +85,6 @@ func GetMapToStructBuff(mapS map[string]interface{},stru interface{}) []byte{
 	newMaps :=make(map[string]interface{})
 
 	for k,_:=range mapS {
-		log.Println(k)
 		f ,isHas :=mapRf.FieldByName(k)
 
 		if !isHas {
