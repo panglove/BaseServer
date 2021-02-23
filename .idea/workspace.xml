@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="82cb6905-b550-46fe-8d8e-d00a81797485" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/mysql/mysql.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/mysql/mysql.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
