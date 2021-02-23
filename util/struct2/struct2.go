@@ -3,6 +3,7 @@ package struct2
 import (
 	"encoding/json"
 	"reflect"
+	"github.com/goinggo/mapstructure"
 	"strconv"
 )
 
@@ -44,7 +45,10 @@ func GetStructValueList(stru interface{})  []string {
 	return list
 
 }
-
+func MapToToEndStruct(mapS interface{},stru interface{}) bool{
+	err :=mapstructure.Decode(mapS,&stru)
+	return err==nil
+}
 func StructToEndMap(stru interface{}) map[string]interface{} {
 	m := make(map[string]interface{})
 	j, _ := json.Marshal(stru)
