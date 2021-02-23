@@ -4,6 +4,7 @@
     <list default="true" id="82cb6905-b550-46fe-8d8e-d00a81797485" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/struct2/struct2.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/struct2/struct2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/struct2/struct2_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/struct2/struct2_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,7 @@
       <recent name="$PROJECT_DIR$/app/hall" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestMapToToEndStruct in github.com/panglove/BaseServer/util/struct2">
+  <component name="RunManager" selected="Go Test.TestGetStructKeyList in github.com/panglove/BaseServer/util/struct2">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="ErBaServer" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -87,11 +88,15 @@
       <filePath value="./main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGetStructKeyList in github.com/panglove/BaseServer/util/struct2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="BaseServer" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+      <working_directory value="$PROJECT_DIR$/util/struct2" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/panglove/BaseServer/util/struct2" />
+      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestGetStructKeyList$" />
       <method v="2" />
     </configuration>
     <configuration name="TestMapToToEndStruct in github.com/panglove/BaseServer/util/struct2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -147,19 +152,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Build.go build main.go (1)" />
       <item itemvalue="Go Test.websocket_test.go" />
       <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/mysql" />
       <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/sqlserver" />
       <item itemvalue="Go Test.TestMapToToEndStruct in github.com/panglove/BaseServer/util/struct2" />
+      <item itemvalue="Go Test.TestGetStructKeyList in github.com/panglove/BaseServer/util/struct2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestGetStructKeyList in github.com/panglove/BaseServer/util/struct2" />
         <item itemvalue="Go Test.TestMapToToEndStruct in github.com/panglove/BaseServer/util/struct2" />
         <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/mysql" />
         <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/sqlserver" />
         <item itemvalue="Go Test.websocket_test.go" />
-        <item itemvalue="Go Build.go build main.go (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -179,31 +184,31 @@
       <screen x="0" y="23" width="1536" height="866" />
     </state>
     <state x="338" y="56" key="CommitChangelistDialog2/0.23.1536.866@0.23.1536.866" timestamp="1610613749544" />
-    <state width="1494" height="206" key="GridCell.Tab.0.bottom" timestamp="1614067602051">
+    <state width="1494" height="206" key="GridCell.Tab.0.bottom" timestamp="1614087259109">
       <screen x="0" y="23" width="1536" height="866" />
     </state>
-    <state width="1494" height="206" key="GridCell.Tab.0.bottom/0.23.1536.866@0.23.1536.866" timestamp="1614067602051" />
+    <state width="1494" height="206" key="GridCell.Tab.0.bottom/0.23.1536.866@0.23.1536.866" timestamp="1614087259109" />
     <state width="1494" height="246" key="GridCell.Tab.0.bottom/0.23.1536.869@0.23.1536.869" timestamp="1613982671050" />
     <state width="1494" height="246" key="GridCell.Tab.0.bottom/0.23.1536.871@0.23.1536.871" timestamp="1613986093256" />
     <state width="1878" height="158" key="GridCell.Tab.0.bottom/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
-    <state width="1494" height="206" key="GridCell.Tab.0.center" timestamp="1614067602050">
+    <state width="1494" height="206" key="GridCell.Tab.0.center" timestamp="1614087259109">
       <screen x="0" y="23" width="1536" height="866" />
     </state>
-    <state width="1494" height="206" key="GridCell.Tab.0.center/0.23.1536.866@0.23.1536.866" timestamp="1614067602050" />
+    <state width="1494" height="206" key="GridCell.Tab.0.center/0.23.1536.866@0.23.1536.866" timestamp="1614087259109" />
     <state width="1494" height="246" key="GridCell.Tab.0.center/0.23.1536.869@0.23.1536.869" timestamp="1613982671049" />
     <state width="1494" height="246" key="GridCell.Tab.0.center/0.23.1536.871@0.23.1536.871" timestamp="1613986093255" />
     <state width="1878" height="158" key="GridCell.Tab.0.center/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
-    <state width="1494" height="206" key="GridCell.Tab.0.left" timestamp="1614067602050">
+    <state width="1494" height="206" key="GridCell.Tab.0.left" timestamp="1614087259108">
       <screen x="0" y="23" width="1536" height="866" />
     </state>
-    <state width="1494" height="206" key="GridCell.Tab.0.left/0.23.1536.866@0.23.1536.866" timestamp="1614067602050" />
+    <state width="1494" height="206" key="GridCell.Tab.0.left/0.23.1536.866@0.23.1536.866" timestamp="1614087259108" />
     <state width="1494" height="246" key="GridCell.Tab.0.left/0.23.1536.869@0.23.1536.869" timestamp="1613982671048" />
     <state width="1494" height="246" key="GridCell.Tab.0.left/0.23.1536.871@0.23.1536.871" timestamp="1613986093254" />
     <state width="1878" height="158" key="GridCell.Tab.0.left/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />
-    <state width="1494" height="206" key="GridCell.Tab.0.right" timestamp="1614067602051">
+    <state width="1494" height="206" key="GridCell.Tab.0.right" timestamp="1614087259109">
       <screen x="0" y="23" width="1536" height="866" />
     </state>
-    <state width="1494" height="206" key="GridCell.Tab.0.right/0.23.1536.866@0.23.1536.866" timestamp="1614067602051" />
+    <state width="1494" height="206" key="GridCell.Tab.0.right/0.23.1536.866@0.23.1536.866" timestamp="1614087259109" />
     <state width="1494" height="246" key="GridCell.Tab.0.right/0.23.1536.869@0.23.1536.869" timestamp="1613982671049" />
     <state width="1494" height="246" key="GridCell.Tab.0.right/0.23.1536.871@0.23.1536.871" timestamp="1613986093256" />
     <state width="1878" height="158" key="GridCell.Tab.0.right/0.23.1920.983@0.23.1920.983" timestamp="1606989485948" />

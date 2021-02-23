@@ -17,6 +17,11 @@ type Payment struct {
 	EthPrice int `json:"ethPrice"`
 	IsPay int `json:"isPay"`
 }
+func TestGetStructKeyList(t *testing.T) {
+	newStruct :=new(Payment)
+	newStruct.Time ="helloworld"
+	log.Println(GetStructKeyList(newStruct))
+}
 
 func TestMapToToEndStruct(t *testing.T) {
 	newMap:=make(map[string]interface{})

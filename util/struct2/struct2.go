@@ -32,8 +32,42 @@ func GetStructSqlValueList(stru interface{})  []string {
 	return list
 
 }
+func GetStructSqlKeyValueList(stru interface{})  ([]string ,[]string ){
+	newMap := StructToEndMap(stru)
+
+	var list []string
+
+	var value []string
 
 
+	for k:=range newMap {
+
+		list = append(list,k)
+	}
+	for z:=range list {
+		value=append(value,InterfaceStrval(newMap[list[z]]))
+	}
+	return list,value
+
+}
+func GetStructSqlKeyValueSqlList(stru interface{})  ([]string ,[]string ){
+	newMap := StructToEndMap(stru)
+
+	var list []string
+
+	var value []string
+
+
+	for k:=range newMap {
+
+		list = append(list,k)
+	}
+	for z:=range list {
+		value=append(value,InterfaceStrSqlval(newMap[list[z]]))
+	}
+	return list,value
+
+}
 func GetStructValueList(stru interface{})  []string {
 	newMap := StructToEndMap(stru)
 
