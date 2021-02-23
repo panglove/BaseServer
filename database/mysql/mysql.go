@@ -234,26 +234,6 @@ func (mdb *MysqlDB) Select(sqlStr string, k ...interface{}) ([]map[string]interf
 
 			valueItem[key] = *values[i].(*interface{})
 
-			switch val := valueItem[key].(type) {
-			case byte:
-				valueItem[key] = val
-				break
-			case []byte:
-				v := string(val)
-				switch v {
-				case "\x00": // 处理数据类型为bit的情况
-					valueItem[key] = 0
-				case "\x01": // 处理数据类型为bit的情况
-					valueItem[key] = 1
-				default:
-					valueItem[key] = v
-					break
-				}
-				break
-			default:
-				valueItem[key] = val
-			}
-
 		}
 		list = append(list, valueItem)
 
