@@ -208,8 +208,8 @@ func CreateFile(filePath string, isCover bool) bool {
 		}
 
 	}
-	_,err := os.Create(filePath)
-
+	f,err := os.Create(filePath)
+	defer f.Close()
 	if err !=nil {
 		return false
 	}
