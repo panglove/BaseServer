@@ -1,8 +1,8 @@
 package storage
 
 import (
-	"github.com/panglove/BaseServer/file"
-	"github.com/panglove/BaseServer/util/des"
+	des "github.com/panglove/BaseServer/util/crypto"
+	"github.com/panglove/BaseServer/util/file"
 )
 
 const StoreDir = "./data/"
@@ -17,7 +17,7 @@ func CheckDir() {
 
 func SetItem(key string, data string) bool {
 	CheckDir()
-	encodeStr, err := des.Encode(data)
+	encodeStr, err := des.DesEncode(data)
 
 	if err != nil {
 		return false
@@ -35,7 +35,7 @@ func GetItem(key string) string {
 	if err != nil {
 		return ""
 	}
-	str2, err := des.Decode(str)
+	str2, err := des.DesDecode(str)
 
 	if err != nil {
 		return ""
