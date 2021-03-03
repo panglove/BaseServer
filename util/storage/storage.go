@@ -23,7 +23,7 @@ func SetItem(key string, data string) bool {
 		return false
 	}
 
-	err = file.WriteFileString(StoreDir+key+".data", encodeStr)
+	err = file.WriteFileBytes(StoreDir+key+".data", []byte(encodeStr))
 
 	return err == nil
 
@@ -31,11 +31,11 @@ func SetItem(key string, data string) bool {
 func GetItem(key string) string {
 	CheckDir()
 
-	str, err := file.ReadFileString(StoreDir + key + ".data")
+	str, err := file.ReadFileBytes(StoreDir + key + ".data")
 	if err != nil {
 		return ""
 	}
-	str2, err := des.DesDecode(str)
+	str2, err := des.DesDecode(string(str))
 
 	if err != nil {
 		return ""
