@@ -16,6 +16,12 @@ func FloatToString(f float64) string {
 	return fStr
 
 }
+func Int64ToString(i int64) string {
+	return strconv.FormatInt(s,10)
+}
+func StringToInt64(s string) (int64 ,err) {
+	return strconv.ParseInt(s,10,64)
+}
 
 func StringToFloat(f string) float64 {
 

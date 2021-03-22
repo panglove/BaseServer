@@ -1,8 +1,13 @@
 package web
 
 import (
+	"github.com/panglove/BaseServer/util/struct2"
 	"strings"
 )
+
+type Param map[string]interface{}
+
+type Header map[string]interface{}
 
 //http://
 func GetUrlFileName(url string) string {
@@ -92,5 +97,24 @@ func GetUrlHostHttp(url string) string {
 
 	}
 	return url[:headLen+endIndex]
+
+}
+
+func ParseParam(param map[string]interface{}) string {
+	if len(param)==0 {
+		return ""
+	}
+	var connectParam = "&"
+	var connectStr = ""
+	for k:=range param {
+		v:= struct2.InterfaceStrval(param[k])
+		connectStr +=k+"="+v+connectParam
+	}
+	if len(connectStr)>0 {
+		connectStr = connectStr[:len(connectStr)-1]
+	}
+
+	return connectStr
+
 
 }

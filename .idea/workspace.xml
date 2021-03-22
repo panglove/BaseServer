@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="82cb6905-b550-46fe-8d8e-d00a81797485" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/storage/storage.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/storage/storage.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/mathutil/mathutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/mathutil/mathutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/web/url.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/web/url.go" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,7 +38,7 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" path="/usr/local/Cellar/go/1.15.6/libexec" />
+  <component name="GOROOT" path="C:/Program Files/Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -78,7 +81,19 @@
       <recent name="$PROJECT_DIR$/app/hall" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestGetStructKeyList in github.com/panglove/BaseServer/util/struct2">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Test.TestRequestFormPost in github.com/panglove/BaseServer/util/web">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="ErBaServer" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -120,25 +135,26 @@
       <pattern value="^TestNew$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestNew in github.com/panglove/BaseServer/database/sqlserver" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestParseParam in github.com/panglove/BaseServer/util/web" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="BaseServer" />
-      <working_directory value="$PROJECT_DIR$/database/sqlserver" />
+      <working_directory value="$PROJECT_DIR$/util/web" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/panglove/BaseServer/database/sqlserver" />
+      <package value="github.com/panglove/BaseServer/util/web" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
-      <pattern value="^TestNew$" />
+      <pattern value="^TestParseParam$" />
       <method v="2" />
     </configuration>
-    <configuration name="websocket_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRequestFormPost in github.com/panglove/BaseServer/util/web" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="BaseServer" />
-      <working_directory value="$PROJECT_DIR$/net" />
+      <working_directory value="$PROJECT_DIR$/util/web" />
       <framework value="gotest" />
-      <kind value="FILE" />
-      <package value="github.com/panglove/BaseServer" />
+      <kind value="PACKAGE" />
+      <package value="github.com/panglove/BaseServer/util/web" />
       <directory value="$PROJECT_DIR$/" />
-      <filePath value="$PROJECT_DIR$/net/websocket_test.go" />
+      <filePath value="$PROJECT_DIR$/" />
+      <pattern value="^TestRequestFormPost$" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp">
@@ -151,24 +167,35 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Test.websocket_test.go" />
       <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/mysql" />
-      <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/sqlserver" />
       <item itemvalue="Go Test.TestMapToToEndStruct in github.com/panglove/BaseServer/util/struct2" />
       <item itemvalue="Go Test.TestGetStructKeyList in github.com/panglove/BaseServer/util/struct2" />
+      <item itemvalue="Go Test.TestParseParam in github.com/panglove/BaseServer/util/web" />
+      <item itemvalue="Go Test.TestRequestFormPost in github.com/panglove/BaseServer/util/web" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestRequestFormPost in github.com/panglove/BaseServer/util/web" />
+        <item itemvalue="Go Test.TestParseParam in github.com/panglove/BaseServer/util/web" />
         <item itemvalue="Go Test.TestGetStructKeyList in github.com/panglove/BaseServer/util/struct2" />
         <item itemvalue="Go Test.TestMapToToEndStruct in github.com/panglove/BaseServer/util/struct2" />
         <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/mysql" />
-        <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/sqlserver" />
-        <item itemvalue="Go Test.websocket_test.go" />
       </list>
     </recent_temporary>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
