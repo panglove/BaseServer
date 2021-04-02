@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="82cb6905-b550-46fe-8d8e-d00a81797485" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/mongodb/mongodb.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/mongodb/mongodb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/mathutil/mathutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/mathutil/mathutil.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,7 +94,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Test.TestRequestFormPost in github.com/panglove/BaseServer/util/web">
+  <component name="RunManager" selected="Go Test.TestNew in github.com/panglove/BaseServer/database/mongodb">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="ErBaServer" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -121,12 +125,12 @@
       <pattern value="^TestMapToToEndStruct$" />
       <method v="2" />
     </configuration>
-    <configuration name="TestNew in github.com/panglove/BaseServer/database/mysql" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="TestNew in github.com/panglove/BaseServer/database/mongodb" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="BaseServer" />
-      <working_directory value="$PROJECT_DIR$/database/mysql" />
+      <working_directory value="$PROJECT_DIR$/database/mongodb" />
       <framework value="gotest" />
       <kind value="PACKAGE" />
-      <package value="github.com/panglove/BaseServer/database/mysql" />
+      <package value="github.com/panglove/BaseServer/database/mongodb" />
       <directory value="$PROJECT_DIR$/" />
       <filePath value="$PROJECT_DIR$/" />
       <pattern value="^TestNew$" />
@@ -164,19 +168,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/mysql" />
       <item itemvalue="Go Test.TestMapToToEndStruct in github.com/panglove/BaseServer/util/struct2" />
       <item itemvalue="Go Test.TestGetStructKeyList in github.com/panglove/BaseServer/util/struct2" />
       <item itemvalue="Go Test.TestParseParam in github.com/panglove/BaseServer/util/web" />
       <item itemvalue="Go Test.TestRequestFormPost in github.com/panglove/BaseServer/util/web" />
+      <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/mongodb" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/mongodb" />
         <item itemvalue="Go Test.TestRequestFormPost in github.com/panglove/BaseServer/util/web" />
         <item itemvalue="Go Test.TestParseParam in github.com/panglove/BaseServer/util/web" />
         <item itemvalue="Go Test.TestGetStructKeyList in github.com/panglove/BaseServer/util/struct2" />
         <item itemvalue="Go Test.TestMapToToEndStruct in github.com/panglove/BaseServer/util/struct2" />
-        <item itemvalue="Go Test.TestNew in github.com/panglove/BaseServer/database/mysql" />
       </list>
     </recent_temporary>
   </component>
