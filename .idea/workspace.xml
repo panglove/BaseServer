@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="82cb6905-b550-46fe-8d8e-d00a81797485" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/mongodb/mongodb.go" beforeDir="false" afterPath="$PROJECT_DIR$/database/mongodb/mongodb.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/mathutil/mathutil.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/mathutil/mathutil.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/file/file.go" beforeDir="false" afterPath="$PROJECT_DIR$/util/file/file.go" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,18 +77,6 @@
       <recent name="$PROJECT_DIR$/static" />
       <recent name="$PROJECT_DIR$/app/hall" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Go Test.TestNew in github.com/panglove/BaseServer/database/mongodb">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">

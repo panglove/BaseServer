@@ -112,6 +112,42 @@ func WriteFileBytes(path string, content []byte) error {
 	return err2
 
 }
+func AppendFileString(path string, content string) error {
+
+	CreateFile(path,true)
+
+	f, err := os.OpenFile(path,os.O_APPEND,os.ModePerm)
+
+	defer f.Close()
+
+	if err != nil {
+		return err
+	}
+
+	_, err2 := f.WriteString(content)
+
+
+	return err2
+
+}
+func AppendFileBytes(path string, content []byte) error {
+
+	CreateFile(path,true)
+
+	f, err := os.OpenFile(path,os.O_APPEND,os.ModePerm)
+
+	defer f.Close()
+
+	if err != nil {
+		return err
+	}
+
+	_, err2 := f.Write(content)
+
+
+	return err2
+
+}
 func PathExists(path string) bool {
 	_, err := os.Stat(path)
 	if err == nil {
